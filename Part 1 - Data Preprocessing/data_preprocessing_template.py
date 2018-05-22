@@ -10,6 +10,7 @@ dataset = pd.read_csv('Data.csv')
 X = dataset.iloc[:, :-1].values
  #     :> all the  lines , :-1 (take all except last one)  
 y =  dataset.iloc[:, 3].values
+df = pd.DataFrame(X)   # to view
 
 # Splitting the Data into Traning Set and Test Set
 from sklearn.cross_validation import train_test_split
